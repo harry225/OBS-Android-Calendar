@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/view_cell"
+    android:layout_width="fill_parent"
+    android:layout_height="44dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minHeight="44dp"
+    android:background="#FFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateLabel"
+        android:layout_weight="0.27"
+        android:text="Date"
+        android:minHeight="44dp"
+        android:maxLines="1"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:width="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkLabel"
+        android:layout_weight="0.27"
+        android:gravity="center_vertical"
+        android:text="Check No"
+        android:minHeight="44dp"
+        android:width="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionLabel"
+        android:layout_weight="0.27"
+        android:text="Description"
+        android:maxLines="1"
+        android:minHeight="44dp"
+        android:width="600dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/creditLabel"
+        android:layout_weight="0.27"
+        android:gravity="center_vertical"
+        android:text="Credit"
+        android:minHeight="44dp"
+        android:maxLines="1"
+        android:width="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/debitLabel"
+        android:layout_weight="0.27"
+        android:text="Debit Label"
+        android:gravity="center_vertical"
+        android:minHeight="44dp"
+        android:maxLines="1"
+        android:width="100dp" />
+</LinearLayout>

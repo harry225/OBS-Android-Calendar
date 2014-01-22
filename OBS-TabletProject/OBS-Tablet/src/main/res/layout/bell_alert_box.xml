@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    
+    <RelativeLayout
+        android:id="@+id/background_alert_box"
+        android:background="@color/obsRed"
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/account_alert_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/alert_error"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/alert_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textAllCaps="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/account_alert_icon"
+            android:text="I'm going to say something amazing."/>
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

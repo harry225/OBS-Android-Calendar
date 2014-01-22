@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/accounts_advanced_search_background"
+    android:id="@+id/advanced_search_wrapper"
+    android:minHeight="120dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advanced\n Search"
+        android:id="@+id/advanced_search_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/check_field_start"
+        android:layout_alignTop="@+id/border1"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/border1"
+        android:background="#FFFFFF"
+        android:maxWidth="1dp"
+        android:minWidth="1dp"
+        android:minHeight="60dp"
+        android:maxHeight="60dp"
+        android:layout_toRightOf="@+id/advanced_search_title"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Enter a Check Number or Check Range"
+        android:id="@+id/enter_check_label"
+        android:layout_toRightOf="@+id/border1"
+        android:layout_alignTop="@+id/border1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_field_start"
+        android:layout_below="@+id/enter_check_label"
+        android:layout_alignLeft="@+id/enter_check_label"
+        android:editable="true"
+        android:background="@drawable/edittext_gray_border"
+        android:width="80dp"
+        android:maxHeight="34dp"
+        android:minHeight="34dp"
+        android:focusable="true"
+        android:prompt="@string/advanced_search_start_check_prompt"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:textSize="12sp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:numeric="integer"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TO"
+        android:id="@+id/check_to_label"
+        android:layout_toRightOf="@+id/check_field_start"
+        android:layout_alignTop="@+id/check_field_start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_field_end"
+        android:editable="true"
+        android:background="@drawable/edittext_gray_border"
+        android:width="80dp"
+        android:maxHeight="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/check_to_label"
+        android:prompt="@string/advanced_search_end_check_prompt"
+        android:minHeight="34dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:numeric="integer"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_alignBottom="@+id/check_field_start"
+        android:layout_alignTop="@+id/check_field_start" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/border2"
+        android:background="#FFFFFF"
+        android:maxWidth="1dp"
+        android:minWidth="1dp"
+        android:minHeight="60dp"
+        android:maxHeight="60dp"
+        android:layout_alignTop="@+id/border1"
+        android:layout_toRightOf="@+id/check_field_end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Enter an Amount or Amount Range"
+        android:id="@+id/amount_range_label"
+        android:layout_alignTop="@+id/enter_check_label"
+        android:layout_toRightOf="@+id/border2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_amount_start"
+        android:layout_alignTop="@+id/check_field_start"
+        android:layout_toRightOf="@+id/border2"
+        android:editable="true"
+        android:background="@drawable/edittext_gray_border"
+        android:prompt="@string/advanced_search_start_amount_prompt"
+        android:width="80dp"
+        android:maxHeight="34dp"
+        android:minHeight="34dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:numeric="decimal"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_alignBottom="@+id/check_field_start" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TO"
+        android:id="@+id/amount_to_label"
+        android:layout_below="@+id/amount_range_label"
+        android:layout_alignTop="@+id/check_field_start"
+        android:layout_toRightOf="@+id/enter_amount_start"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_amount_end"
+        android:editable="true"
+        android:background="@drawable/edittext_gray_border"
+        android:prompt="@string/advanced_search_end_amount_prompt"
+        android:width="80dp"
+        android:maxHeight="34dp"
+        android:layout_alignTop="@+id/check_field_start"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/amount_to_label"
+        android:minHeight="34dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:numeric="decimal"
+        android:singleLine="true"
+        android:textSize="12dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_alignBottom="@+id/check_field_start" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/border3"
+        android:background="#FFFFFF"
+        android:maxWidth="1dp"
+        android:minWidth="1dp"
+        android:minHeight="60dp"
+        android:maxHeight="60dp"
+        android:layout_alignTop="@+id/border1"
+        android:layout_toRightOf="@+id/enter_amount_end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"  />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Enter Date or Date Range"
+        android:id="@+id/date_range_label"
+        android:layout_alignTop="@+id/enter_check_label"
+        android:layout_toRightOf="@+id/border3" />
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.obs.mobile_tablet.components.DateButton"
+        android:id="@+id/start_date_field"
+        android:layout_alignTop="@+id/check_field_start"
+        android:layout_toRightOf="@+id/border3"
+        android:maxWidth="90dp"
+        android:minWidth="100dp"
+        android:minHeight="34dp"
+        android:maxHeight="34dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TO"
+        android:id="@+id/date_to_label"
+        android:layout_below="@+id/date_range_label"
+        android:layout_alignTop="@+id/check_field_start"
+        android:layout_toRightOf="@+id/border3"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="10dp" />
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.obs.mobile_tablet.components.DateButton"
+        android:id="@+id/end_date_field"
+        android:layout_alignTop="@+id/check_field_start"
+        android:layout_toRightOf="@+id/date_to_label"
+        android:maxWidth="90dp"
+        android:minWidth="90dp"
+        android:minHeight="34dp"
+        android:maxHeight="34dp"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/advanced_search_group_spinner"
+        android:layout_alignRight="@+id/check_field_start"
+        android:background="@drawable/widget_dropdown_back_selector"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:minHeight="34dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/border1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/advanced_search_close_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:height="34dp"
+        android:width="34dp"
+        android:minWidth="34dp"
+        android:minHeight="34dp"
+        android:maxWidth="34dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:background="@drawable/accounts_advanced_search_close_button"
+        android:textColor="@color/obsDarkGray" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/advanced_search_submit_button"
+        android:background="@drawable/button_primary_selector"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:maxHeight="34dp"
+        android:minHeight="34dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignTop="@+id/advanced_search_group_spinner" />
+
+</RelativeLayout>

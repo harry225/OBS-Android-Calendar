@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="progress_container_length">690dp</dimen>
+    <dimen name="progress_bar_height">30dp</dimen>
+    <dimen name="progress_bar_corner_radius">7dp</dimen>
+    <dimen name="progress_bar_font_size">14sp</dimen>
+    <dimen name="rounded_corners">7dp</dimen>
+    <dimen name="rounded_corners_small">5dp</dimen>
+    <dimen name="registration_btn_width">230dp</dimen>
+    <dimen name="registration_btn_font_size">14sp</dimen>
+    <dimen name="footer_btn_width">90dp</dimen>
+    <dimen name="footer_btn_height">30dp</dimen>
+    
+    <dimen name="balance_dist">3dp</dimen>
+
+    <dimen name="accts_list_title_width">300dp</dimen>
+    <dimen name="accts_list_title_height">44dp</dimen>
+    <dimen name="accts_list_value_width">130dp</dimen>
+    <dimen name="accts_list_hdr_font_size">16sp</dimen>
+    <dimen name="accts_list_hdr_font_size_2">14sp</dimen>
+    <dimen name="accts_list_item_font_size">14sp</dimen>
+
+
+</resources>

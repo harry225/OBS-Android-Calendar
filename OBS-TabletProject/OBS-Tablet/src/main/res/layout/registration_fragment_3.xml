@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="What is your mother's first name?"
+            android:id="@+id/question1Label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/question1Field"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/question1Label"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@drawable/edittext_selector"
+            android:minWidth="400dp"
+            android:maxWidth="400dp"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What town were you born in?"
+            android:id="@+id/question2Label"
+            android:layout_marginRight="11dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/question1Field"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/question2Field"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/question2Label"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@drawable/edittext_selector"
+            android:minWidth="400dp"
+            android:maxWidth="400dp"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="132dp"
+        android:layout_height="44dp"
+        android:text="SKIP"
+        android:id="@+id/skip_button"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        style="@style/obsPrimaryButtonStyle"
+        android:clickable="false"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="132dp"
+        android:layout_height="44dp"
+        android:text="RESTART"
+        android:id="@+id/restart_button"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        style="@style/obsCancelButtonStyle"
+        android:clickable="true"
+        android:layout_toLeftOf="@+id/submit_button"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:layout_width="132dp"
+        android:layout_height="44dp"
+        android:text="NEXT"
+        android:id="@+id/submit_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        style="@style/obsPrimaryButtonStyle" />
+
+</RelativeLayout>

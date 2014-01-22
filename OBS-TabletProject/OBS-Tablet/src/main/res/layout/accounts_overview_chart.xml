@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|bottom"
+        style="@style/AccountOverviewGraphBlockStyle"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Graph Title"
+            android:id="@+id/title"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            style="@style/AccountOverviewGraphBlockHeaderStyle" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:id="@+id/content_holder_pie"
+                android:layout_centerHorizontal="true">
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="170dp"
+                android:text="NO DATA REPORTED"
+                android:id="@+id/no_data_text"
+                android:layout_gravity="right|bottom"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="20dp"
+                android:textColor="@color/obsMediumGray"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/legend_title"
+                android:layout_width="fill_parent"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:background="@color/obsLightGray"
+                android:text="Total Accounts:"
+                android:layout_marginTop="170dp" />
+
+            <ListView
+                android:id="@+id/vertical_legend"
+                android:layout_width="fill_parent"
+                android:layout_height="112dp"
+                android:layout_marginTop="196dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

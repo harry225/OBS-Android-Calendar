@@ -1,0 +1,85 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.7.+'
+        classpath 'com.squareup.gradle:gradle-android-test-plugin:0.9.1-SNAPSHOT'
+    }
+}
+
+apply plugin: 'android'
+apply plugin: 'android-test'
+
+
+repositories {
+    mavenCentral()
+}
+
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.0'
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 19
+    }
+
+    sourceSets {
+        instrumentTest.setRoot('src/test')
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+
+dependencies {
+    compile 'org.apache.commons:commons-io:1.3.2'
+    compile 'com.android.support:support-v4:19.0.0'
+    compile 'com.android.support:appcompat-v7:19.0.0'
+    compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.3.0'
+    compile 'com.squareup.dagger:dagger-compiler:1.2.0'
+    compile 'com.squareup.dagger:dagger:1.2.0'
+    compile 'com.squareup:otto:1.3.4'
+    compile 'org.mockito:mockito-all:+'
+    compile files('libs/jdom.jar')
+    compile files('libs/achartengine-1.1.0.jar')
+    compile files('libs/XStream.jar')
+    compile files('libs/XStream-1.3.jar')
+    compile files('libs/achartengine-1.1.0.jar')
+    compile files('libs/TestFlightLib.jar')
+
+    //    compile files('/Users/k1ko/OBS_Android/OBS-TabletProject/libs/achartengine-1.1.0.jar')
+//    compile 'org.robolectric:robolectric:2.1.+'
+    testCompile 'junit:junit:4.10'
+    testCompile 'org.robolectric:robolectric:2.1.+'
+    testCompile 'com.squareup:fest-android:1.0.+'
+    instrumentTestCompile 'junit:junit:4.10'
+    instrumentTestCompile 'org.robolectric:robolectric:2.1.+'
+    instrumentTestCompile 'com.squareup:fest-android:1.0.+'
+}
+
+
+//task informationReportingTest(type: Test, dependsOn(testDependencies)) {
+//    include '**/*InformationReportingFacade*'
+//}
+//
+//tasks.withType(Test) {
+//    testLogging {
+//        events 'started', 'passed'
+//    }
+//
+//}
+
+

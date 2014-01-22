@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OBS-Tablet</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="registering_account">Registering account and activation key</string>
+    <string name="registering_pin">Registering PIN with server</string>
+    <string name="validating_user">Verifying identity</string>
+
+    <string name="restart_registration_alert">If you restart registration you will lose all progress and will have to reenter your credentials. Are you sure you would like to restart?</string>
+    <string name="registration_help_1">Enter the credentials provided by or financial institution. The Company ID and User ID are case sensitive.
+    The Activation Key is NOT case sensitive. Once the maximum number of characters is entered into an Activation Key input field, the
+    next character will automatically be placed into the subsequent field. If you do not know your credentials or if they are not being recognized,
+     please contact your company administrator or financial institution.</string>
+    <string name="registration_help_2">Create your secret PIN, which will be utilized to access your banking information through this application. Enter your PIN twice to ensure that no keying errors are made.</string>
+    <string name="registration_help_3">For each question, enter the answer previously provided by you to the financial institution. Answers are case sensitive. If you do not know these answers or if they are not being recognized please contact your company administrator or financial institution.</string>
+
+
+    <string name="password_reset_dialog_title">Forgot PIN</string>
+    <string name="password_reset_dialog_text">Once you select Reset you will need to reactivate this application, which may require a new activation key. Please type in "reset", then select the Reset button if you are certain.</string>
+
+    <string name="welcome_splash_text">The business banking application provides on-the-go access to account information and banking features, helping you navigate and conquer the business world.\n\nBut first things first.  Your banking security is very important to us.  Therefore, this application must be registered with the unique credentials you have been provided.\n\nSo let\'s Get Started!</string>
+
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing…</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+
+    <string name="overview_graphs_header">Your Business Banking Overview</string>
+
+    <string name="advanced_search_start_check_prompt">Start Check #</string>
+    <string name="advanced_search_end_check_prompt">End Check #</string>
+    <string name="advanced_search_start_amount_prompt">Start Amount</string>
+    <string name="advanced_search_end_amount_prompt">End Amount</string>
+
+</resources>

@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@color/obsPrimary">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/registration_bg_imageview"
+        android:src="@drawable/login_bg_texture"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:background="@drawable/login_bg_gray"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_centerInParent="true"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:src="@drawable/wb_logo"
+                android:scaleType="fitStart" />
+
+            <TextView
+                android:id="@+id/welcome_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WELCOME! Please enter your credentials in the provided fields."
+                android:layout_gravity="center_vertical" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/infoButton"
+                android:scaleType="center"
+                android:background="@drawable/info_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <com.obs.mobile_tablet.registration.RegistrationAlertBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registration_alert_box" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <View
+                android:layout_height="260dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/login_bg_white" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="315dp"
+                android:layout_gravity="left|top">
+
+                <com.obs.mobile_tablet.components.OBSProgressBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/obs_progress_bar"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+
+                </com.obs.mobile_tablet.components.OBSProgressBar>
+
+                <com.obs.mobile_tablet.components.CustomViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/registration_pager" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="315dp"
+                android:id="@+id/registration_success_frame"
+                android:visibility="invisible">
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|top"
+        android:id="@+id/registration_splash_frame"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/input_tabber"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#cc000000"
+            android:visibility="invisible"
+            android:layout_gravity="right|top">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PREV"
+                android:id="@+id/button_prev" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:id="@+id/button_next" />
+
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:id="@+id/fade_frame"></LinearLayout>
+</RelativeLayout>
+
+

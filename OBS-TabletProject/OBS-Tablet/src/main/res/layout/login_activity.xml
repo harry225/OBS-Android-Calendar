@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/login_ad_left"
+            android:scaleType="center"
+            android:src="@drawable/login_ad_left"
+            android:focusableInTouchMode="false"
+            android:background="#ffffff"
+            android:adjustViewBounds="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/login_ad_right"
+                android:src="@drawable/login_ad_right"
+                android:scaleType="centerCrop" />
+
+            <FrameLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/dropshadow"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/obsLoginBg">
+
+                    <ImageView
+                        android:layout_width="310dp"
+                        android:layout_height="63dp"
+                        android:scaleType="fitStart"
+                        android:id="@+id/login_logo"
+                        android:src="@drawable/wb_logo"
+                        android:focusableInTouchMode="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="ENTER YOUR PIN"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/enter_pin"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#888"
+                        android:text="Please remember PINs are case sensitive"
+                        android:id="@+id/please_remember_text" />
+
+                    <EditText
+                        android:id="@+id/pin_field"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="44dp"
+                        android:background="@drawable/edittext_gray_border"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:password="true" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="34dp"
+                            android:layout_marginRight="10dp"
+                            android:text="LOG IN"
+                            android:id="@+id/login_button"
+                            android:layout_gravity="right|center_vertical"
+                            style="@style/obsPrimaryButtonStyle" />
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="34dp"
+                            android:layout_marginRight="10dp"
+                            android:text="SKIP"
+                            android:id="@+id/skip_button"
+                            android:layout_gravity="center"
+                            android:visibility="invisible"
+                            style="@style/obsPrimaryButtonStyle" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="I forgot my PIN"
+                            android:id="@+id/forgot_pin_button"
+                            android:layout_gravity="left|center_vertical"
+                            android:textColor="@color/obsAccent"
+                            android:textSize="13sp"
+                            android:background="#00ffffff" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alert_holder"
+    android:layout_width="fill_parent"
+    android:layout_height="175dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/obsMediumGray">
+
+        <ListView
+            android:id="@+id/alerts_list"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:dividerHeight="4dp">
+        </ListView>
+
+        <TextView
+            android:id="@+id/dismissText"
+            android:layout_below="@id/alerts_list"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISMISS"/>
+
+    </RelativeLayout>
+</LinearLayout>

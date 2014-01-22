@@ -1,0 +1,71 @@
+{
+    "reason" : "",
+    "errorBanners" : null,
+    "apiversion" : "v1",
+    "data" : {
+      "totals" : [
+        {
+          "graphs" : [
+            {
+              "dataPoints" : [
+
+              ],
+              "type" : "PIE",
+              "displayText" : "Accounts"
+            }
+          ],
+          "displayType" : "DDA",
+          "accountCount" : 9,
+          "balanceTotals" : [
+
+          ]
+        },
+        {
+          "graphs" : [
+            {
+              "dataPoints" : [
+
+              ],
+              "type" : "PIE",
+              "displayText" : "Accounts"
+            }
+          ],
+          "displayType" : "General Ledger",
+          "accountCount" : 1,
+          "balanceTotals" : [
+
+          ]
+        },
+        {
+          "graphs" : [
+            {
+              "dataPoints" : [
+
+              ],
+              "type" : "PIE",
+              "displayText" : "Accounts"
+            }
+          ],
+          "displayType" : "Savings",
+          "accountCount" : 1,
+          "balanceTotals" : [
+
+          ]
+        }
+      ]
+    },
+    "infoBanners" : null,
+    "successBanners" : null,
+    "nonce" : [
+      "6OT1I0o8KEfpFIqG85jvRw==",
+      "6gw080d98ilLT2wGC1CJRw==",
+      "zjMt+vUV8kJf6JCq5RPKxg==",
+      "CnfEq43In9HJbMr2\/To8PA==",
+      "IMKm6ohcLxUZgbD0ozbKAQ==",
+      "5pSESf5S\/\/o\/PWKLVgq27Q==",
+      "r74h2xeK\/RvgzOoEqDf4nw==",
+      "anhMH3\/ReYzzy5dS16oMQQ==",
+      "gT771FU\/lb8SJqG8B61w2g==",
+      "5uFwhXkIQhuVneoh9ncIjw=="
+    ]
+  }

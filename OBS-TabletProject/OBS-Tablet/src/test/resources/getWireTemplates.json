@@ -1,0 +1,41 @@
+{
+    "reason":"",
+    "nonce":[
+             "5sol0POOI/ldcCVqki+Tlw==",
+             "tGt7BrlCXQ80FD0dHgZLIw==",
+             "igGhQT+OI2aFIVIvfbLVCw==",
+             "ICDUKvlcSOiv8Z7GnHzp4g==",
+             "cd4JTuVpK8W8VyTBj3otiw==",
+             "ZxNFAUhUOjurxKcq1UtSQQ==",
+             "dZc91a3wVNQuCA7Mfo2YTw==",
+             "s8tmmJXnbhk5wbSUx/16AA==",
+             "LNqoUW7XT31TOSNIFxh/QQ==",
+             "F+tvZlM3152wCMHrXlOg0w=="
+             ],
+    "apiversion":"v1",
+    "data":{
+        "templates":[
+                     {
+                     "templateId":"1228",
+                     "templateName":"High Repetitive 1"
+                     },
+                     {
+                     "templateId":"1299",
+                     "templateName":"Repetitive OBS Wire"
+                     },
+                     {
+                     "templateId":"1227",
+                     "templateName":"Simple Repetitive 1"
+                     },
+                     {
+                     "templateId":"1410",
+                     "templateName":"Test Template 1"
+                     }
+                     ]
+    },
+    "errorBanners":null,
+    "infoBanners":[
+                   "For today's processing USD Wires must be submitted before 6:00 PM EST.\nFX Wires must be submitted before 6:00 PM EST."
+                   ],
+    "successBanners":null
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="obsPrimary">#799D43</color>
+    <color name="obsLightPrimary">#d7e8c2</color>
+    <color name="obsSecondary">#ECF8FF</color>
+    <color name="obsAccent">#69b5ff</color>
+    <color name="obsLightGray">#F3F1F3</color>
+    <color name="obsMediumGray">#787878</color>
+    <color name="obsDarkGray">#535356</color>
+    <color name="obsBorder">#cfd3e1</color>
+    <color name="obsRed">#b70817</color>
+    <color name="obsGreen">#ff53b73b</color>
+    <color name="obsProgressBarCurrent">#61B0DF</color>
+    <color name="obsProgressBarCurrent2">#4E8DB2</color>
+    <color name="obsProgressBarPast">#4E8DB2</color>
+    <color name="obsProgressBarPast2">#3e718e</color>
+    <color name="obsProgressText">#000000</color>
+    <color name="obsHeader">#799D43</color>
+    <color name="obsSlider">#69b5ff</color>
+    <color name="obsHighlight">#69b5ff</color>
+    <color name="obsDebitTextColor">#ff7f00</color>
+    //Buttons
+    <color name="obsPrimaryButton">#799D43</color>
+    <color name="obsPrimaryButtonSelected">#547132</color>
+    <color name="obsPrimaryButtonText">#FFFFFF</color>
+    <color name="obsAccentButton">#69b5ff</color>
+    <color name="obsAccentButtonSelected">#437faf</color>
+    <color name="obsAccentButtonText">#FFFFFF</color>
+    <color name="obsCancelButton">#b70817</color>
+    <color name="obsCancelButtonSelected">#b70817</color>
+    <color name="obsCancelButtonText">#FFFFFF</color>
+    //Payment Status Bar
+    <color name="obsStatus25">#69b5ff</color>
+    <color name="obsStatus50">#6db0d3</color>
+    <color name="obsStatus75">#75a477</color>
+    <color name="obsStatus100">#799D43</color>
+
+    <color name="obsLoginBg">#CCFFFFFF</color>
+    <color name="obsLoginPasswordResetBg">#CCF3F1F3</color>
+
+    //Pie Chart Array of Colors
+    <string-array name="piechartcolors">
+        <item>#0A67A3</item>
+        <item>#FFBC00</item>
+        <item>#FF4100</item>
+        <item>#FF8E00</item>
+        <item>#1921B1</item>
+        <item>#00B25C</item>
+        <item>#8805A8</item>
+        <item>#84E900</item>
+        <item>#FFDE00</item>
+        <item>#D9005B</item>
+        <item>#FF0000</item>
+        <item>#FF0000</item>
+        <item>#00FF00</item>
+        <item>#0000FF</item>
+    </string-array>
+
+    //Bar Chart Array of Colors
+    <string-array name="barchartcolors">
+        <item>#799D43</item>
+        <item>#69b5ff</item>
+    </string-array>
+
+    //Line Chart Array of Colors
+    <string-array name="linechartcolors">
+        <item>#53b73b</item>
+    </string-array>
+
+    //No Data Chart Colors:
+    <string-array name="nodatachartcolors">
+        <item>#AAAAAA</item>
+        <item>#CCCCCC</item>
+    </string-array>
+
+</resources>

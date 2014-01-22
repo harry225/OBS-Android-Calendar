@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="34dp"
+    android:id="@+id/row"
+    android:background="@drawable/transparent_button_selector">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/highlightrow"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description"
+        android:textSize="13dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|left"
+        android:paddingRight="6dp"
+        android:drawableLeft="@drawable/vert_divider_line"
+        android:drawablePadding="30dp" />
+
+    <TextView
+        android:id="@+id/icon"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="12dp"
+        android:background="#ffff0000"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_launcher"
+        android:layout_centerVertical="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="6dp" />
+
+</RelativeLayout>

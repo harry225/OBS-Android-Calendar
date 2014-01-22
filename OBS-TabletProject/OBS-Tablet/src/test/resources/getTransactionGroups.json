@@ -1,0 +1,94 @@
+{
+    "reason" : "",
+    "errorBanners" : null,
+    "apiversion" : "v1",
+    "data" : {
+      "transactionGroups" : [
+        {
+          "code" : "Coco ACH",
+          "id" : "11",
+          "name" : "COCO ACH TRANSACTIONS",
+          "type" : "COMPANY",
+          "typeCodes" : "37,142,165,166,469,169"
+        },
+        {
+          "code" : "Coco Checks",
+          "id" : "10",
+          "name" : "COCO CHECK TRANSACTIONS",
+          "type" : "COMPANY",
+          "typeCodes" : "475"
+        },
+        {
+          "code" : "ACH",
+          "id" : "8",
+          "name" : "ACH-RELATED TRANSACTIONS",
+          "type" : "BANK",
+          "typeCodes" : "142,143,257,145,165,168,169,469,468,466,166,258,447,445,451,455,452,462"
+        },
+        {
+          "code" : "CHECKS",
+          "id" : "7",
+          "name" : "CHECK-RELATED TRANSACTIONS",
+          "type" : "BANK",
+          "typeCodes" : "175,221,222,475,395,522,474,472"
+        },
+        {
+          "code" : "REST SUMMARY",
+          "id" : "4",
+          "name" : "RESTRICTED SUMMARY REPORT",
+          "type" : "BANK",
+          "typeCodes" : "10,15,40,60"
+        },
+        {
+          "code" : "TESTGROUP",
+          "id" : "1",
+          "name" : "TEST GROUP",
+          "type" : "BANK",
+          "typeCodes" : "10,15,20,25,30,35,40,45,50"
+        },
+        {
+          "code" : "WIRES",
+          "id" : "6",
+          "name" : "WIRE TRANSFERS",
+          "type" : "BANK",
+          "typeCodes" : "195,495,208,491,191,196,496,497"
+        },
+        {
+          "code" : "ALL",
+          "id" : "ALL",
+          "name" : "ALL DATA TYPES",
+          "type" : "SYSTEM",
+          "typeCodes" : ""
+        },
+        null,
+        {
+          "code" : "CREDIT",
+          "id" : "CREDIT",
+          "name" : "ALL CREDIT TRANSACTIONS",
+          "type" : "SYSTEM",
+          "typeCodes" : ""
+        },
+        {
+          "code" : "DEBIT",
+          "id" : "DEBIT",
+          "name" : "ALL DEBIT TRANSACTIONS",
+          "type" : "SYSTEM",
+          "typeCodes" : ""
+        }
+      ]
+    },
+    "infoBanners" : null,
+    "successBanners" : null,
+    "nonce" : [
+      "raBJFWXPtE3f0CoJ7swtGQ==",
+      "7Z8hNVrn9AmuPjKZdi1ZmA==",
+      "wVnwqdghelpNvAa0kaQUNg==",
+      "QO1bNXtfDzP4sHH7vNJ4QA==",
+      "MBDdALTbWiRxG11zRSPo\/w==",
+      "V+d+Y5afahDzaTuAdSypKQ==",
+      "8gVLh3l2siR1VIf8Ifa1\/A==",
+      "my80aLRPfRCsLrIbOgV76g==",
+      "qaRJ7N3JsrGFO2XhM+UpMQ==",
+      "AFRfVsjkFaZ3koSutZhNxA=="
+    ]
+  }

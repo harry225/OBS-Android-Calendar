@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/companyIDLabel"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="Company ID:"
+            android:layout_alignRight="@+id/activationKeyLabel"
+            android:gravity="right|center_vertical"
+            android:textSize="18sp" />
+
+        <EditText
+
+            android:id="@+id/companyIDField"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@drawable/edittext_selector"
+            android:minWidth="130dp"
+            android:maxWidth="130dp"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/companyIDLabel"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:gravity="right|center_vertical"
+            android:text="User ID:"
+            android:id="@+id/userIDLabel"
+            android:layout_marginLeft="40dp"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/companyIDField"
+            android:layout_toRightOf="@id/companyIDField" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:id="@+id/editText"
+            android:background="@drawable/edittext_selector"
+            android:minWidth="130dp"
+            android:maxWidth="130dp"
+            android:maxLines="1"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/userIDLabel"
+            android:layout_toRightOf="@id/userIDLabel"
+            android:textSize="16sp" />
+
+        <!-- ROW 2 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:gravity="right|center_vertical"
+            android:text="Activation Key:"
+            android:id="@+id/activationKeyLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="56dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:minWidth="90dp"
+            android:maxWidth="90dp"
+            android:maxLines="1"
+            android:maxLength="5"
+            android:id="@+id/actKey1"
+            android:background="@drawable/edittext_selector"
+            android:layout_marginLeft="7dp"
+            android:inputType="textCapCharacters"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/activationKeyLabel"
+            android:layout_toRightOf="@+id/activationKeyLabel" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:minWidth="90dp"
+            android:maxWidth="90dp"
+            android:maxLines="1"
+            android:maxLength="5"
+            android:id="@+id/actKey2"
+            android:background="@drawable/edittext_selector"
+            android:layout_marginLeft="7dp"
+            android:inputType="textCapCharacters"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/actKey1"
+            android:layout_toRightOf="@+id/actKey1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:minWidth="90dp"
+            android:maxWidth="90dp"
+            android:maxLines="1"
+            android:maxLength="5"
+            android:id="@+id/actKey3"
+            android:background="@drawable/edittext_selector"
+            android:layout_marginLeft="7dp"
+            android:inputType="textCapCharacters"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/actKey2"
+            android:layout_toRightOf="@+id/actKey2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:minWidth="90dp"
+            android:maxWidth="90dp"
+            android:maxLines="1"
+            android:maxLength="5"
+            android:id="@+id/actKey4"
+            android:background="@drawable/edittext_selector"
+            android:layout_marginLeft="7dp"
+            android:inputType="textCapCharacters"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/actKey3"
+            android:layout_toRightOf="@+id/actKey3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:minWidth="90dp"
+            android:maxWidth="90dp"
+            android:maxLines="1"
+            android:maxLength="5"
+            android:id="@+id/actKey5"
+            android:background="@drawable/edittext_selector"
+            android:layout_marginLeft="7dp"
+            android:inputType="textCapCharacters"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/actKey4"
+            android:layout_toRightOf="@+id/actKey4" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="132dp"
+        android:layout_height="44dp"
+        android:text="SKIP"
+        android:id="@+id/skip_button"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        style="@style/obsPrimaryButtonStyle"
+        android:clickable="false"
+        android:layout_toLeftOf="@+id/submit_button"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="132dp"
+        android:layout_height="44dp"
+        android:text="NEXT"
+        android:id="@+id/submit_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        style="@style/obsPrimaryButtonStyle"
+        android:clickable="false" />
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:alertDialogStyle">@style/resetPasswordDialogBg</item>
+    </style>
+
+    <style name="obsPrimaryButtonStyle">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/obsPrimaryButtonText</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/button_primary_selector</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="obsAccentButtonStyle">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/obsAccentButtonText</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/button_accent_selector</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="obsCancelButtonStyle">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/obsCancelButtonText</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/button_cancel_selector</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="obsFooterButtonStyle">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/obs_progress_footer_btn</item>
+        <item name="android:clickable">true</item>
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="resetPasswordDialogTitle">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="resetPasswordDialogText">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="resetPasswordDialogBg" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/reset_password_dialog_bg</item>
+    </style>
+
+    <style name="AccountDetailBlockStyle">
+        <item name="android:background">@drawable/accounts_detail_block</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="AccountOverviewGraphBlockStyle">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:background">@drawable/accounts_detail_block</item>
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="AccountOverviewGraphBlockHeaderStyle">
+        <item name="android:background">@drawable/accounts_detail_block_header</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textColor">@color/obsAccentButtonText</item>
+        <item name="android:textSize">14sp</item>
+
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="AccountDetailButtonStyle">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/obsAccentButtonText</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/button_account_detail_selector</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="AccountDetailListViewHeaderText">
+        <item name="android:textColor">@color/obsMediumGray</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <!-- <item name="typeface">InterstateBlack.tff</item> -->
+    </style>
+
+    <style name="ptr_headerContainer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0px</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="ptr_header">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ptr_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/ptr_pulltorefresh_arrow</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+
+    <style name="ptr_spinner" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+
+    <style name="ptr_textwrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ptr_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="ptr_last_updated" parent="ptr_text">
+        <item name="android:textStyle">normal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_below">@+id/ptr_id_text</item>
+    </style>
+
+</resources>

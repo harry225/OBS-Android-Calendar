@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#000000"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textSize="16dp"
+            android:text="PAYMENT DETAIL"
+            android:id="@+id/view_title"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:id="@+id/back_button"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_black_selector"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:height="34dp"
+            android:minHeight="34dp"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</LinearLayout>

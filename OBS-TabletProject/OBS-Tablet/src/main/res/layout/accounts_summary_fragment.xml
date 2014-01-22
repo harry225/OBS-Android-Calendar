@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textSize="16dp"
+            android:text="ACCOUNTS SUMMARY"
+            android:id="@+id/view_title"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:id="@+id/back_button"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_black_selector"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:height="34dp"
+            android:minHeight="34dp"
+            android:layout_marginLeft="12dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@color/obsSecondary"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/graphs_wrapper"
+            style="@style/AccountDetailBlockStyle"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="0dp">
+
+            <com.obs.mobile_tablet.accounts.AccountsBalanceHistoryChart
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
+                android:id="@+id/balance_history_chart"
+                android:layout_below="@+id/balance_his_text">
+
+            </com.obs.mobile_tablet.accounts.AccountsBalanceHistoryChart>
+
+            <com.obs.mobile_tablet.accounts.AccountsTransactionBarChart
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/balance_history_chart"
+                android:id="@+id/transactions_bar_chart"
+                android:layout_alignParentEnd="false"
+                android:baselineAligned="false"
+                android:layout_alignParentBottom="true">
+            </com.obs.mobile_tablet.accounts.AccountsTransactionBarChart>
+
+            <com.obs.mobile_tablet.accounts.AccountsPercentTransactionsChart
+                android:layout_width="180dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/percent_transactions_pie_chart"
+                android:layout_toRightOf="@+id/transactions_bar_chart"
+                android:layout_alignParentStart="false"
+                android:layout_marginBottom="-10dp">
+            </com.obs.mobile_tablet.accounts.AccountsPercentTransactionsChart>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/pie_chart_button"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:background="@drawable/transparent_button_selector"
+                android:layout_alignLeft="@+id/percent_transactions_pie_chart"
+                android:layout_alignTop="@+id/percent_transactions_pie_chart" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/transactions_percent_txt" />
+
+
+            <TextView
+                android:id="@+id/balance_his_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="13dp"
+                android:text="Balance History"/>
+
+            <TextView
+                android:id="@+id/transactions_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent \nTransactions"
+                android:textSize="11dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="405dp"
+                android:layout_toRightOf="@id/balance_his_text"/>
+
+            <TextView
+                android:id="@+id/transactions_percent_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:text="% Transactions"
+                android:layout_marginLeft="90dp"
+                android:layout_toRightOf="@id/transactions_txt"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_below="@+id/graphs_wrapper"
+            android:layout_marginTop="8dp"
+            android:id="@+id/list_wrapper"
+            android:layout_above="@+id/button_wrapper">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/payments_wrapper"
+                android:layout_weight="2"
+                style="@style/AccountDetailBlockStyle"
+                android:layout_marginRight="8dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dp"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Payments"
+
+                        android:id="@+id/payments_header"
+                        android:singleLine="false"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="VIEW ALL"
+                        android:id="@+id/view_all_payments_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="false"
+                        android:singleLine="true"
+                        android:background="@drawable/button_account_detail_selector"
+                        android:textColor="@color/obsAccentButtonText"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pay_header"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dp"
+                    android:minHeight="44dp"
+                    android:background="#FFF"
+                    android:layout_marginTop="34dp">
+
+                    <TextView
+                        android:id="@+id/pay_type_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.2"
+                        android:width="40dp"
+                        android:text="TYPE"
+                        style="@style/AccountDetailListViewHeaderText"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/pay_amt_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.4"
+                        android:text="AMOUNT"
+                        android:width="50dp"
+                        style="@style/AccountDetailListViewHeaderText"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:gravity="center_vertical|right" />
+
+                    <TextView
+                        android:id="@+id/pay_date_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.4"
+                        android:text="DATE"
+                        android:width="50dp"
+                        style="@style/AccountDetailListViewHeaderText"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:gravity="center_vertical|right" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="No recent payments for this account"
+                    android:id="@+id/no_payments_textview"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginTop="34dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/obsDarkGray" />
+
+                <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/payments_preview_list"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginTop="68dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/transactions_wrapper"
+                android:layout_weight="1"
+                style="@style/AccountDetailBlockStyle">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="false">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Recent Transactions"
+                        android:id="@+id/transactions_header"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="VIEW ALL"
+                        android:id="@+id/view_all_transactions_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="false"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/button_account_detail_selector"
+                        android:textColor="@color/obsAccentButtonText"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/trans_header"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dp"
+                    android:background="#FFF"
+                    android:layout_marginTop="34dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/trans_date_header"
+                        android:layout_weight="0.27"
+                        android:text="DATE"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:width="100dp"
+                        style="@style/AccountDetailListViewHeaderText"
+                        android:textAlignment="gravity"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/trans_check_header"
+                        android:layout_weight="0.27"
+                        android:text="CHECK NO."
+                        android:width="100dp"
+                        style="@style/AccountDetailListViewHeaderText"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/trans_description_header"
+                        android:layout_weight="0.27"
+                        android:text="DESCRIPTION"
+                        android:width="200dp"
+                        style="@style/AccountDetailListViewHeaderText"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/trans_credit_header"
+                        android:layout_weight="0.27"
+                        android:text="CREDIT"
+                        android:width="100dp"
+                        style="@style/AccountDetailListViewHeaderText"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/trans_debit_header"
+                        android:layout_weight="0.27"
+                        android:text="DEBIT"
+                        android:width="100dp"
+                        style="@style/AccountDetailListViewHeaderText"
+                        android:textAlignment="gravity"
+                        android:gravity="center_vertical|right"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="No recent transactions for this account"
+                    android:id="@+id/no_transactions_textview"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="34dp"
+                    android:textColor="@color/obsDarkGray" />
+
+                <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/transactions_preview_list"
+                    android:layout_marginTop="68dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:id="@+id/button_wrapper"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="ACCOUNT STATS"
+                android:id="@+id/acct_stats_button"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                style="@style/obsPrimaryButtonStyle"
+                android:layout_weight=".2"
+                android:layout_marginRight="4dp"
+                android:clickable="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="MAKE A DEPOSIT"
+                android:id="@+id/deposit_button"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                style="@style/obsPrimaryButtonStyle"
+                android:layout_weight=".2"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="POSITIVE PAY"
+                android:id="@+id/positive_pay_button"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                style="@style/obsPrimaryButtonStyle"
+                android:layout_weight=".2"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="STOP PAYMENT"
+                android:id="@+id/stop_payment_button"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                style="@style/obsPrimaryButtonStyle"
+                android:layout_weight=".2"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="MAKE A PAYMENT"
+                android:id="@+id/payment_button"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                style="@style/obsPrimaryButtonStyle"
+                android:layout_weight=".2"
+                android:layout_marginLeft="4dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

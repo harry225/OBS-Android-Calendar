@@ -1,0 +1,394 @@
+{
+    "reason" : "",
+    "errorBanners" : null,
+    "apiversion" : "v1",
+    "data" : {
+      "accounts" : [
+        {
+          "displayName" : "Darias Fancy A...  (*21312)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/381",
+          "type" : "DDA",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "381",
+          "recentPayments" : null,
+          "accountId" : "221",
+          "companyId" : "68",
+          "name" : "Darias Fancy Account",
+          "bankId" : "OBS",
+          "accountNumber" : "09321312",
+          "balances" : null,
+          "graphs" : null
+        },
+        {
+          "displayName" : "DariaB (*00777)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/401",
+          "type" : "DDA",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "401",
+          "recentPayments" : null,
+          "accountId" : "108",
+          "companyId" : "68",
+          "name" : "DariaB",
+          "bankId" : "OBS",
+          "accountNumber" : "103000777",
+          "balances" : null,
+          "graphs" : null
+        },
+        {
+          "displayName" : "main (*41234)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/352",
+          "type" : "DDA",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "352",
+          "recentPayments" : null,
+          "accountId" : "313",
+          "companyId" : "68",
+          "name" : "main",
+          "bankId" : "OBS",
+          "accountNumber" : "123412341234",
+          "balances" : null,
+          "graphs" : null
+        },
+        {
+          "displayName" : "Dans Payroll (*52744)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/386",
+          "type" : "DDA",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "386",
+          "recentPayments" : null,
+          "accountId" : "25",
+          "companyId" : "68",
+          "name" : "Dans Payroll",
+          "bankId" : "OBS",
+          "accountNumber" : "4043552744",
+          "balances" : null,
+          "graphs" : null
+        },
+        {
+          "displayName" : "Dans Deposit (*41444)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/387",
+          "type" : "DDA",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "387",
+          "recentPayments" : null,
+          "accountId" : "30",
+          "companyId" : "68",
+          "name" : "Dans Deposit",
+          "bankId" : "OBS",
+          "accountNumber" : "4043941444",
+          "balances" : null,
+          "graphs" : null
+        },
+        {
+          "displayName" : "Dans Operation...  (*66061)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/388",
+          "type" : "DDA",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "388",
+          "recentPayments" : null,
+          "accountId" : "5",
+          "companyId" : "68",
+          "name" : "Dans Operations",
+          "bankId" : "OBS",
+          "accountNumber" : "4045266061",
+          "balances" : null,
+          "graphs" : null
+        },
+        {
+          "displayName" : "Dans Checking (*51045)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/389",
+          "type" : "DDA",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "389",
+          "recentPayments" : null,
+          "accountId" : "26",
+          "companyId" : "68",
+          "name" : "Dans Checking",
+          "bankId" : "OBS",
+          "accountNumber" : "4048051045",
+          "balances" : null,
+          "graphs" : null
+        },
+        {
+          "displayName" : "Secondary (*74567)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/354",
+          "type" : "DDA",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "354",
+          "recentPayments" : null,
+          "accountId" : "315",
+          "companyId" : "68",
+          "name" : "Secondary",
+          "bankId" : "OBS",
+          "accountNumber" : "456745674567",
+          "balances" : null,
+          "graphs" : null
+        },
+        {
+          "displayName" : "checking (*96789)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/353",
+          "type" : "DDA",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "353",
+          "recentPayments" : null,
+          "accountId" : "314",
+          "companyId" : "68",
+          "name" : "checking",
+          "bankId" : "OBS",
+          "accountNumber" : "678967896789",
+          "balances" : null,
+          "graphs" : null
+        },
+        {
+          "displayName" : "Coco Payroll (*80002)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/390",
+          "type" : "General Ledger",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "390",
+          "recentPayments" : null,
+          "accountId" : "334",
+          "companyId" : "68",
+          "name" : "Coco Payroll",
+          "bankId" : "OBS",
+          "accountNumber" : "4045180002",
+          "balances" : null,
+          "graphs" : null
+        },
+        {
+          "displayName" : "Savings (*16541)",
+          "abaId" : "1",
+          "transactionDetails" : null,
+          "historicalBalances" : null,
+          "accountUrl" : "\/api\/v1\/account\/383",
+          "type" : "Savings",
+          "abaNumber" : "111111118",
+          "companyAccountId" : "383",
+          "recentPayments" : null,
+          "accountId" : "332",
+          "companyId" : "68",
+          "name" : "Savings",
+          "bankId" : "OBS",
+          "accountNumber" : "654165416541",
+          "balances" : null,
+          "graphs" : null
+        }
+      ],
+      "accountTypes" : [
+        {
+          "id" : "DDA",
+          "name" : "DDA",
+          "thumbnailTypeCodes" : [
+            {
+              "name" : "Opening Ledger",
+              "typeCode" : "010"
+            },
+            {
+              "name" : "Closing Ledger",
+              "typeCode" : "015"
+            },
+            {
+              "name" : "Opening Available",
+              "typeCode" : "040"
+            }
+          ]
+        },
+        {
+          "id" : "ACH",
+          "name" : "ACH",
+          "thumbnailTypeCodes" : [
+            {
+              "name" : "Opening Ledger",
+              "typeCode" : "010"
+            },
+            {
+              "name" : "Total ACH Credits",
+              "typeCode" : "140"
+            },
+            {
+              "name" : "Total ACH Debits",
+              "typeCode" : "450"
+            }
+          ]
+        },
+        {
+          "id" : "LOCKBOX",
+          "name" : "Lockbox",
+          "thumbnailTypeCodes" : [
+            {
+              "name" : "Total Lockbox Deposits",
+              "typeCode" : "110"
+            },
+            {
+              "name" : "Current Day Total Lockbox Deposits",
+              "typeCode" : "109"
+            },
+            {
+              "name" : null,
+              "typeCode" : "111"
+            },
+            {
+              "name" : null,
+              "typeCode" : "112"
+            },
+            {
+              "name" : null,
+              "typeCode" : "113"
+            }
+          ]
+        },
+        {
+          "id" : "CTRLDISB",
+          "name" : "Controlled Disbursement",
+          "thumbnailTypeCodes" : [
+            {
+              "name" : "Total Controlled Disbursing Debits",
+              "typeCode" : "580"
+            },
+            {
+              "name" : "Total Disbursing Checks Paid - Early Amount",
+              "typeCode" : "583"
+            },
+            {
+              "name" : "Total Disbursing Checks Paid - Later Amount",
+              "typeCode" : "584"
+            }
+          ]
+        },
+        {
+          "id" : "SAVINGS",
+          "name" : "Savings",
+          "thumbnailTypeCodes" : [
+            {
+              "name" : "Opening Ledger",
+              "typeCode" : "010"
+            },
+            {
+              "name" : "Closing Ledger",
+              "typeCode" : "015"
+            },
+            {
+              "name" : "Opening Available",
+              "typeCode" : "040"
+            }
+          ]
+        },
+        {
+          "id" : "LOAN",
+          "name" : "Loan",
+          "thumbnailTypeCodes" : [
+            {
+              "name" : "Principle Loan Balance",
+              "typeCode" : "701"
+            },
+            {
+              "name" : "Available CommitmentAmount",
+              "typeCode" : "703"
+            },
+            {
+              "name" : "Payment Amount Due",
+              "typeCode" : "705"
+            }
+          ]
+        },
+        {
+          "id" : "MMA",
+          "name" : "Money Mkt",
+          "thumbnailTypeCodes" : [
+            {
+              "name" : "Opening Ledger",
+              "typeCode" : "010"
+            },
+            {
+              "name" : "Closing Ledger",
+              "typeCode" : "015"
+            },
+            {
+              "name" : "Opening Available",
+              "typeCode" : "040"
+            }
+          ]
+        },
+        {
+          "id" : "CREDIT",
+          "name" : "Credit Card",
+          "thumbnailTypeCodes" : [
+            {
+              "name" : "Opening Ledger",
+              "typeCode" : "010"
+            },
+            {
+              "name" : "Closing Ledger",
+              "typeCode" : "015"
+            },
+            {
+              "name" : "Opening Available",
+              "typeCode" : "040"
+            }
+          ]
+        },
+        {
+          "id" : "LEDGER",
+          "name" : "General Ledger",
+          "thumbnailTypeCodes" : [
+            {
+              "name" : "Opening Ledger",
+              "typeCode" : "010"
+            },
+            {
+              "name" : "Closing Ledger",
+              "typeCode" : "015"
+            },
+            {
+              "name" : "Opening Available",
+              "typeCode" : "040"
+            }
+          ]
+        }
+      ]
+    },
+    "infoBanners" : null,
+    "successBanners" : null,
+    "nonce" : [
+      "6OT1I0o8KEfpFIqG85jvRw==",
+      "6gw080d98ilLT2wGC1CJRw==",
+      "zjMt+vUV8kJf6JCq5RPKxg==",
+      "CnfEq43In9HJbMr2\/To8PA==",
+      "IMKm6ohcLxUZgbD0ozbKAQ==",
+      "5pSESf5S\/\/o\/PWKLVgq27Q==",
+      "r74h2xeK\/RvgzOoEqDf4nw==",
+      "anhMH3\/ReYzzy5dS16oMQQ==",
+      "gT771FU\/lb8SJqG8B61w2g==",
+      "5uFwhXkIQhuVneoh9ncIjw=="
+    ]
+  }
+}

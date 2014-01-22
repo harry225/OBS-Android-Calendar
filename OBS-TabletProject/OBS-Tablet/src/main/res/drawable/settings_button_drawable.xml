@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/obs_progress_footer_btn" android:id="@+id/rounded_corners"/>
+    <item android:drawable="@drawable/settings_icon" android:id="@+id/additional_image" />
+</layer-list>

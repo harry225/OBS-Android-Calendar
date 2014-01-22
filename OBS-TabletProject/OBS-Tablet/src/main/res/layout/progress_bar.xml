@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/progress_bar_height"
+    android:id="@+id/obs_progress_container">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/progress_background" />
+
+    <ProgressBar
+        android:id="@+id/android_progress_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/customprogress"
+        android:progress="0"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:focusableInTouchMode="false" />
+
+    <LinearLayout
+        android:id="@+id/textview_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</RelativeLayout>

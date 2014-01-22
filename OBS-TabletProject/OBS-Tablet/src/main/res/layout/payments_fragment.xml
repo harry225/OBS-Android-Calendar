@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/payment_banner"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#000000"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textSize="16dp"
+            android:text="PAYMENT CENTER"
+            android:id="@+id/view_title"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/payment_banner_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/obsLightGray">
+
+        <TextView
+            android:id="@+id/make_payment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:text="MAKE A PAYMENT:"/>
+        
+        <Button
+            android:id="@+id/payee_button"
+            android:layout_width="145dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/make_payment_text"
+            android:text="PAYEE"
+            style="@style/obsPrimaryButtonStyle"/>
+
+        <Button
+            android:id="@+id/ach_button"
+            android:layout_width="145dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/payee_button"
+            android:text="ACH PAYMENT"
+            style="@style/obsPrimaryButtonStyle"/>
+
+        <Button
+            android:id="@+id/transfer_button"
+            android:layout_width="145dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/ach_button"
+            android:text="TRANSFER"
+            style="@style/obsPrimaryButtonStyle"/>
+
+        <Button
+            android:id="@+id/wire_button"
+            android:layout_width="145dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/transfer_button"
+            android:text="WIRE"
+            style="@style/obsPrimaryButtonStyle"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to details"
+            android:id="@+id/test_detail_button" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/payment_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</LinearLayout>
